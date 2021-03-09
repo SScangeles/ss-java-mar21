@@ -1,6 +1,6 @@
 package com.ss.wk1.d1.patterns;
 /**
- * Utility class with four different algorithms to print the patterns.
+ * Utility class with four different algorithms for each pattern.
  * @author Christian Angeles
  *
  */
