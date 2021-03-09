@@ -15,14 +15,14 @@ public class MakePatterns {
 		switch(patternNum) {
 		case 1:
 			PatternsUtil.patternOne();
-			System.out.println("------");
+			System.out.println("......");
 			break;
 		case 2:
 			PatternsUtil.patternTwo();
-			System.out.println("-----");
+			System.out.println(".....");
 			break;
 		case 3:
-			System.out.println("-----");
+			System.out.println(".....");
 			PatternsUtil.patternThree();
 			break;
 		}
