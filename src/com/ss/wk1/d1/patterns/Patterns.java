@@ -4,6 +4,7 @@
 package com.ss.wk1.d1.patterns;
 
 /**
+ * Week 1, Day 1 - Java Basics: Patterns
  * @author Christian Angeles
  */
 public class Patterns {
