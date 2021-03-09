@@ -17,6 +17,5 @@ public class Patterns {
 		mp.printPattern(1);
 		mp.printPattern(2);
 		mp.printPattern(3);
-		mp.printPattern(4);
 	}
 }
