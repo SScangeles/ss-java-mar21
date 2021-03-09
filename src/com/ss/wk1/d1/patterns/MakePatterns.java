@@ -1,4 +1,4 @@
-package com.ss.wk1.d1;
+package com.ss.wk1.d1.patterns;
 /**
  * Class to print four different patterns.
  * @author Christian Angeles

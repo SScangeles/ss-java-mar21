@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.ss.wk1.d1;
+package com.ss.wk1.d1.patterns;
 
 /**
  * @author Christian Angeles
