@@ -2,7 +2,6 @@ package com.ss.wk1.d1.patterns;
 /**
  * Class to print four different patterns.
  * @author Christian Angeles
- *
  */
 public class MakePatterns {
 	private String dash;
@@ -19,20 +18,20 @@ public class MakePatterns {
 		
 		switch(patternNum) {
 		case 1:
-			PatternUtil.patternOne();
+			PatternsUtil.patternOne();
 			System.out.println(dash);
 			break;
 		case 2:
 			System.out.println(dash);
-			PatternUtil.patternTwo();
+			PatternsUtil.patternTwo();
 			break;
 		case 3:
-			PatternUtil.patternThree();
+			PatternsUtil.patternThree();
 			System.out.println(dash);
 			break;
 		case 4:
 			System.out.println(dash);
-			PatternUtil.patternFour();
+			PatternsUtil.patternFour();
 			break;
 		}
 

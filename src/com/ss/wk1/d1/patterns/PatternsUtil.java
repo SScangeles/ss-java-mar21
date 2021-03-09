@@ -2,10 +2,11 @@ package com.ss.wk1.d1.patterns;
 /**
  * Utility class with four different algorithms for each pattern.
  * @author Christian Angeles
- *
  */
-public class PatternUtil {
-	
+public class PatternsUtil {
+	/**
+	 * Algorithm for pattern 1
+	 */
 	public static void patternOne() {
 		for(int i = 0; i < 4; ++i) {
 			for(int j = 0; j <= i; ++j) {
@@ -14,7 +15,9 @@ public class PatternUtil {
 			System.out.println();
 		}
 	}
-	
+	/**
+	 * Algorithm for pattern 2
+	 */
 	public static void patternTwo() {
 		for(int i = 4; i > 0; --i) {
 			for(int j = 0; j < i; ++j) {
@@ -23,7 +26,9 @@ public class PatternUtil {
 			System.out.println();
 		}
 	}
-	
+	/**
+	 * Algorithm for pattern 3
+	 */
 	public static void patternThree() {
 		for(int i = 0; i < 4; ++i) {
 			String star = " *";
@@ -37,7 +42,9 @@ public class PatternUtil {
 			System.out.println(whiteSpace + star);
 		}
 	}
-	
+	/**
+	 * Algorithm for pattern 4
+	 */
 	public static void patternFour() {
 		for(int i = 4; i > 0; --i) {
 			String star = "  ";
