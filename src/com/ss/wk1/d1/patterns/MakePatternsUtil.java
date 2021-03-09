@@ -3,7 +3,7 @@ package com.ss.wk1.d1.patterns;
  * Utility class with different algorithms for each pattern.
  * @author Christian Angeles
  */
-public class PatternsUtil {
+public class MakePatternsUtil {
 	/**
 	 * Algorithm for pattern 1
 	 */

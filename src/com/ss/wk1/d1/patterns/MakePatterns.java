@@ -14,16 +14,16 @@ public class MakePatterns {
 		
 		switch(patternNum) {
 		case 1:
-			PatternsUtil.patternOne();
+			MakePatternsUtil.patternOne();
 			System.out.println("......");
 			break;
 		case 2:
-			PatternsUtil.patternTwo();
+			MakePatternsUtil.patternTwo();
 			System.out.println(".....");
 			break;
 		case 3:
 			System.out.println(".....");
-			PatternsUtil.patternThree();
+			MakePatternsUtil.patternThree();
 			break;
 		}
 
