@@ -5,7 +5,7 @@ package com.ss.wk1.d2.maxnumber;
 import com.ss.wk1.d1.guessrng.RandomNumber;
 
 /**
- * Creates a 2D array and generate random numbers (1-100) for each element.
+ * Creates a 2D array and generate a random number (1-100) for each element.
  * @author Christian Angeles
  */
 public class CreateArray {
