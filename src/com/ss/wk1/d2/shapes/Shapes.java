@@ -4,6 +4,7 @@
 package com.ss.wk1.d2.shapes;
 
 /**
+ * Week 1, Day 2 - Shape Interface
  * @author Christian Angeles
  */
 public class Shapes {
