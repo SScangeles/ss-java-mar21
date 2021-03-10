@@ -17,9 +17,11 @@ public class CreateArray {
 	 * @param col
 	 */
 	public CreateArray(int row, int col) {
+		RandomNumber randNum = new RandomNumber();
+		arrNumbers = new int[row][col];
 		this.row = row;
 		this.col = col;
-		RandomNumber randNum = new RandomNumber();
+		
 		for(int i = 0; i < row; ++i) {
 			for(int j = 0; j < col; ++j) {
 				arrNumbers[i][j] = randNum.getRandNumber();
@@ -30,18 +32,18 @@ public class CreateArray {
 	 * Returns 2D array with RNG elements.
 	 * @return
 	 */
-	public int[][] getArrayNumbers() {
+	public int[][] getArray() {
 		return arrNumbers;
 	}
 	/**
-	 * Returns 2D array number of rows.
+	 * Returns number of rows.
 	 * @return
 	 */
 	public int getNumRows() {
 		return row;
 	}
 	/**
-	 * Return 2D array number of columns.
+	 * Return number of columns.
 	 * @return
 	 */
 	public int getNumCols() {
