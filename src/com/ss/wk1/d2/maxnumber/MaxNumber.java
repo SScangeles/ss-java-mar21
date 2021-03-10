@@ -13,7 +13,11 @@ public class MaxNumber {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		CreateArray numbers = new CreateArray(4, 2);
+		CreateArray numbers = new CreateArray(5, 10);
+		
+		MaxNumberUtil.printArray(numbers);
+		MaxNumberUtil.getMaxNum(numbers);
+		MaxNumberUtil.getPosition(numbers);
 	}
 
 }
