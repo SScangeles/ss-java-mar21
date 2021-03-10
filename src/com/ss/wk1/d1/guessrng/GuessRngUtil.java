@@ -8,14 +8,13 @@ package com.ss.wk1.d1.guessrng;
  * @author Christian Angeles
  */
 public class GuessRngUtil {
-	private static int chances = 0;
-	private static boolean winState = false;
 	/**
-	 * Checks if user number is between +/-10 of the random number.
+	 * Checks if user number is between +/-10 of the random number. Returns true if guess is correct.
 	 * @param userNum
 	 * @param randNum
+	 * @return
 	 */
-	public static void checkNum(int userNum, int randNum) {
+	public static boolean checkNum(int userNum, int randNum) {
 		int randNumLow, randNumHigh;
 		
 		if(randNum > 10) {
@@ -36,25 +35,11 @@ public class GuessRngUtil {
 		
 		if(userNum <= randNumHigh && userNum >= randNumLow) {
 			System.out.println("Your guess is be between " + randNumLow + " and " + randNumHigh + ".");
-			winState = true;
+			return true;
 		}
 		else {
 			System.out.println("Your guess must be between " + randNumLow + " and " + randNumHigh + ".");
-			chances = chances + 1;
+			return false;
 		}
-	}
-	/**
-	 * Returns user's number of chances left to play.
-	 * @return
-	 */
-	public static int getChances() {
-		return chances;
-	}
-	/**
-	 * Returns true if user wins.
-	 * @return
-	 */
-	public static boolean isWinner() {
-		return winState;
 	}
 }

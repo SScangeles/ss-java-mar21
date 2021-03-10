@@ -24,7 +24,7 @@ public class CreateArray {
 		
 		for(int i = 0; i < row; ++i) {
 			for(int j = 0; j < col; ++j) {
-				arrNumbers[i][j] = randNum.getRandNumber();
+				arrNumbers[i][j] = randNum.getPosRandNumber(100);
 			}
 		}
 	}

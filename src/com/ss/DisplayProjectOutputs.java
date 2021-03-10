@@ -20,7 +20,8 @@ public class DisplayProjectOutputs {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		GuessRng test = new GuessRng();
+		GuessRng guessNum = new GuessRng();
+		guessNum.start();
 	}
 
 }

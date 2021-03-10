@@ -6,7 +6,7 @@ package com.ss.wk1.d1.guessrng;
 import java.util.Random;
 
 /**
- * Generates random number 1-100.
+ * Generates a random number.
  * @author Christian Angeles
  */
 public class RandomNumber {
@@ -18,10 +18,18 @@ public class RandomNumber {
 		rng = new Random();
 	}
 	/**
-	 * Returns randomly generated number (1-100).
+	 * Returns randomly generated positive number.
 	 * @return
 	 */
-	public int getRandNumber() {
-		return rng.nextInt(100) + 1;
+	public int getPosRandNumber() {
+		return rng.nextInt() + 1;
+	}
+	/**
+	 * Returns randomly generated positive number (1 to maxRange).
+	 * @param maxRange
+	 * @return
+	 */
+	public int getPosRandNumber(int maxRange) {
+		return rng.nextInt(maxRange) + 1;
 	}
 }
