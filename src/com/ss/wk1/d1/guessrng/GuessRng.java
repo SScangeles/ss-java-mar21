@@ -36,10 +36,9 @@ public class GuessRng {
 			else if(numChance < 5){
 				System.out.printf("Try again.\n\n");
 			}
-		}
-		
-		if(numChance >= 5) {
-			System.out.println("You lose!");
+			else {
+				System.out.println("You lose!");
+			}
 		}
 	}
 }
