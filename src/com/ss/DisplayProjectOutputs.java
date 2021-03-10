@@ -3,7 +3,11 @@
  */
 package com.ss;
 
-import com.ss.wk1.*;
+import com.ss.wk1.d1.guessrng.*;
+import com.ss.wk1.d1.patterns.*;
+import com.ss.wk1.d2.addvalues.*;
+import com.ss.wk1.d2.maxnumber.*;
+import com.ss.wk1.d2.shapes.*;
 
 /**
  * Class used to display outputs of projects. 
@@ -16,7 +20,7 @@ public class DisplayProjectOutputs {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-
+		GuessRng test = new GuessRng();
 	}
 
 }
