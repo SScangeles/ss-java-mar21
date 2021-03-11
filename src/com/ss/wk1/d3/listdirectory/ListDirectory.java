@@ -24,13 +24,14 @@ public class ListDirectory {
 	public void start() {
 		System.out.print("Enter path to list: ");
 		userIn.setInput();
-		try {
+
+		if(fileOps.listFileDir(userIn.getInput().toString()) != null){
 			for(String filenames: fileOps.listFileDir(userIn.getInput().toString())) {
 				System.out.println(filenames);
 			}
 		}
-		catch(Exception e) {
-			e.printStackTrace();
+		else {
+			System.out.println("No file/directories to list.");
 		}
 	}
 }

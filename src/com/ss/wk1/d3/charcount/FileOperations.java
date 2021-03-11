@@ -47,14 +47,8 @@ public class FileOperations {
 	 * @param path
 	 * @return
 	 */
-	public String[] listFileDir(String path) throws Exception {
-		File dir;
-		if(path.isEmpty()) {
-			dir = new File(".");
-		}
-		else {
-			dir = new File(path);
-		}
+	public String[] listFileDir(String path) {
+		File dir = new File(path);
 		
 		return dir.list();
 	}
