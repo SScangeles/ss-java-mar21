@@ -26,7 +26,7 @@ public class CharCount {
 	public void start() {
 		System.out.print("Enter character to count: ");
 		userIn.setInput();
-		charCount = file.countChar("resources/in/Lorems.txt", userIn.getInput().toString());
+		charCount = file.countChar("resources/in/Lorem.txt", userIn.getInput().toString());
 		System.out.println("Character count: "+charCount);
 	}
 }
