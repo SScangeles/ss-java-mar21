@@ -31,7 +31,6 @@ public class GuessRng {
 			
 			if(winState) {
 				System.out.println("You win!");
-				break;
 			}
 			else if(numChance < 5){
 				System.out.printf("Try again.\n\n");

@@ -23,8 +23,10 @@ public class DisplayProjectOutputs {
 	 * @param args
 	 */
 	public static void main(String[] args) {
+		GuessRng gr = new GuessRng();
 		CharCount cc = new CharCount();
-		cc.start();
+		
+		gr.start();
 	}
 
 }
