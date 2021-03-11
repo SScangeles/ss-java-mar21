@@ -53,9 +53,9 @@ public class FileOperations {
 		File dir = new File(path);
 		List<String> list = new ArrayList<>();
 		
-		if(dir.list() != null) {
+		if(dir.list() != null && dir.list().length > 0 ) {
 			for(int i = 0; i < dir.list().length; ++i) {
-				list.addAll(listFileDir(path+"\\"+dir.list()[i]));
+				list.addAll(listFileDir(dir.getPath()+"\\"+dir.list()[i]));
 			}
 		}
 		else {
