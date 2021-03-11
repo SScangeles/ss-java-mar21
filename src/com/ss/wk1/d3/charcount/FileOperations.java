@@ -6,8 +6,8 @@ package com.ss.wk1.d3.charcount;
 import java.io.FileInputStream;
 
 /**
+ * Class to perform file related operations.
  * @author Christian Angeles
- *
  */
 public class FileOperations {
 	/**
