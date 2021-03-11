@@ -11,7 +11,7 @@ import java.io.FileInputStream;
  */
 public class FileOperations {
 	/**
-	 * Counts the number of time a character appears in a file.
+	 * Counts the number of time a character appears in a file. Returns character count.
 	 * @param filePathName
 	 * @param letter
 	 * @return
