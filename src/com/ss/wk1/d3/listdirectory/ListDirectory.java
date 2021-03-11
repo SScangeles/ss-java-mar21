@@ -4,6 +4,10 @@
 package com.ss.wk1.d3.listdirectory;
 
 import com.ss.wk1.d3.charcount.FileOperations;
+
+import java.util.ArrayList;
+import java.util.List;
+
 import com.ss.wk1.d1.guessrng.ConsoleUserInput;
 
 /**
@@ -13,10 +17,12 @@ import com.ss.wk1.d1.guessrng.ConsoleUserInput;
 public class ListDirectory {
 	private FileOperations fileOps;
 	private ConsoleUserInput userIn;
+	private List<String> listDir;
 	
 	public ListDirectory() {
 		fileOps = new FileOperations();
 		userIn = new ConsoleUserInput();
+		listDir = new ArrayList<>();
 	}
 	/**
 	 * Starts list directory project.
@@ -24,14 +30,10 @@ public class ListDirectory {
 	public void start() {
 		System.out.print("Enter path to list: ");
 		userIn.setInput();
+		listDir = fileOps.listFileDir(userIn.getInput().toString());
 
-		if(fileOps.listFileDir(userIn.getInput().toString()) != null){
-			for(String filenames: fileOps.listFileDir(userIn.getInput().toString())) {
-				System.out.println(filenames);
-			}
-		}
-		else {
-			System.out.println("No file/directories to list.");
+		for(String filename: listDir) {
+			System.out.println(filename);
 		}
 	}
 }

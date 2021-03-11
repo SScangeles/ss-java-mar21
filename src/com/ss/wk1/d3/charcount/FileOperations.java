@@ -7,6 +7,8 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Class to perform fileIO related operations.
@@ -47,9 +49,18 @@ public class FileOperations {
 	 * @param path
 	 * @return
 	 */
-	public String[] listFileDir(String path) {
+	public List<String> listFileDir(String path) {
 		File dir = new File(path);
+		List<String> list = new ArrayList<>();
 		
-		return dir.list();
+		if(dir.list() != null) {
+			for(int i = 0; i < dir.list().length; ++i) {
+				list.addAll(listFileDir(path+"\\"+dir.list()[i]));
+			}
+		}
+		else {
+			list.add(dir.getPath());
+		}
+		return list;
 	}
 }
