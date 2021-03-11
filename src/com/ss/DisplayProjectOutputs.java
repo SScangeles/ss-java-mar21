@@ -8,6 +8,9 @@ import com.ss.wk1.d1.patterns.*;
 import com.ss.wk1.d2.addvalues.*;
 import com.ss.wk1.d2.maxnumber.*;
 import com.ss.wk1.d2.shapes.*;
+import com.ss.wk1.d3.charcount.*;
+import com.ss.wk1.d3.fileappend.*;
+import com.ss.wk1.d3.listdirectory.*;
 
 /**
  * Class used to display outputs of projects. 
