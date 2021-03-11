@@ -3,10 +3,13 @@
  */
 package com.ss.wk1.d3.charcount;
 
+import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileWriter;
+import java.io.IOException;
 
 /**
- * Class to perform file related operations.
+ * Class to perform fileIO related operations.
  * @author Christian Angeles
  */
 public class FileOperations {
@@ -16,7 +19,7 @@ public class FileOperations {
 	 * @param letter
 	 * @return
 	 */
-	public Integer countChar(String filePathName, String letter) {
+	public Integer countChar(String filePathName, String letter) throws IOException {
 		int charCount = 0;
 		
 		try(FileInputStream fileIn = new FileInputStream(filePathName)){
@@ -27,11 +30,32 @@ public class FileOperations {
 				}
 			}
 		}
-		catch(Exception e) {
-			System.out.println("FileIO.countChar: "+e.getMessage());
-			//e.printStackTrace();
+		return charCount;
+	}
+	/**
+	 * Append text to a text file.
+	 * @param filePathName
+	 * @param addText
+	 */
+	public void appendToFile(String filePathName, String addText) throws IOException {
+		try(FileWriter fileWrite = new FileWriter(filePathName, true)){
+			fileWrite.append(addText);
+		}
+	}
+	/**
+	 * Returns string array of the file/directory names of given path.
+	 * @param path
+	 * @return
+	 */
+	public String[] listFileDir(String path) throws Exception {
+		File dir;
+		if(path.isEmpty()) {
+			dir = new File(".");
+		}
+		else {
+			dir = new File(path);
 		}
 		
-		return charCount;
+		return dir.list();
 	}
 }

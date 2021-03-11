@@ -23,10 +23,12 @@ public class DisplayProjectOutputs {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		GuessRng gr = new GuessRng();
-		CharCount cc = new CharCount();
+		GuessRng guessNum = new GuessRng();
+		CharCount countChar = new CharCount();
+		FileAppend fileApp = new FileAppend();
+		ListDirectory listDir = new ListDirectory();
 		
-		gr.start();
+		listDir.start();
 	}
 
 }
