@@ -3,14 +3,14 @@
  */
 package com.ss;
 
-import com.ss.wk1.d1.guessrng.*;
-import com.ss.wk1.d1.patterns.*;
-import com.ss.wk1.d2.addvalues.*;
-import com.ss.wk1.d2.maxnumber.*;
-import com.ss.wk1.d2.shapes.*;
-import com.ss.wk1.d3.charcount.*;
-import com.ss.wk1.d3.fileappend.*;
-import com.ss.wk1.d3.listdirectory.*;
+import com.ss.wk1.d1.guessrng.GuessRng;
+import com.ss.wk1.d1.patterns.Patterns;
+import com.ss.wk1.d2.addvalues.AddValues;
+import com.ss.wk1.d2.maxnumber.MaxNumber;
+import com.ss.wk1.d2.shapes.Shapes;
+import com.ss.wk1.d3.charcount.CharCount;
+import com.ss.wk1.d3.fileappend.FileAppend;
+import com.ss.wk1.d3.listdirectory.ListDirectory;
 
 /**
  * Class used to display outputs of projects. 
