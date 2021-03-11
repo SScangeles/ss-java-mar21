@@ -45,7 +45,7 @@ public class FileOperations {
 		}
 	}
 	/**
-	 * Returns string array of the file/directory names of given path.
+	 * Returns list of strings of the file/directory names of given path.
 	 * @param path
 	 * @return
 	 */
