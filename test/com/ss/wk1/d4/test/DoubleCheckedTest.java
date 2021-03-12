@@ -3,10 +3,8 @@
  */
 package com.ss.wk1.d4.test;
 
-import static org.junit.Assert.assertEquals;
-
+import static org.junit.Assert.assertTrue;
 import org.junit.Test;
-
 import com.ss.wk1.d4.doublechecked.DoubleChecked;
 
 /**
@@ -18,6 +16,6 @@ public class DoubleCheckedTest {
 	
 	@Test
 	public void startTest() {
-		assertEquals(true, dc.start());
+		assertTrue(dc.start());
 	}
 }

@@ -3,10 +3,8 @@
  */
 package com.ss.wk1.d4.test;
 
-import static org.junit.Assert.assertEquals;
-
+import static org.junit.Assert.assertTrue;
 import org.junit.Test;
-
 import com.ss.wk1.d4.deadlock.Deadlock;
 
 /**
@@ -17,11 +15,11 @@ public class DeadlockTest {
 
 	@Test
 	public void startTest() {
-		assertEquals(true, dl.start());
+		assertTrue(dl.start());
 	}
 
 	@Test
 	public void startNewThreadTest() {
-		assertEquals(true, dl.startNewThread("ThreadName", 1, 2));
+		assertTrue(dl.startNewThread("ThreadName", 1, 2));
 	}
 }
