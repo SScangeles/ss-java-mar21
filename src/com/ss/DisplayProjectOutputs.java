@@ -11,10 +11,13 @@ import com.ss.wk1.d2.shapes.Shapes;
 import com.ss.wk1.d3.charcount.CharCount;
 import com.ss.wk1.d3.fileappend.FileAppend;
 import com.ss.wk1.d3.listdirectory.ListDirectory;
+import com.ss.wk1.d4.doublechecked.DoubleChecked;
+import com.ss.wk1.d4.deadlock.Deadlock;
+import com.ss.wk1.d4.produceconsumer.ProducerConsumer;
 
 /**
  * Class used to display outputs of projects. 
- * Note: Recode some projects for re-usability
+ * Note: Refactor some projects for re-usability
  * @author Christian Angeles
  */
 public class DisplayProjectOutputs {
@@ -27,8 +30,11 @@ public class DisplayProjectOutputs {
 		CharCount countChar = new CharCount();
 		FileAppend fileApp = new FileAppend();
 		ListDirectory listDir = new ListDirectory();
+		DoubleChecked checked = new DoubleChecked();
+		ProducerConsumer pc = new ProducerConsumer();
+		Deadlock dl = new Deadlock();
 		
-		listDir.start();
+		pc.start();
 	}
 
 }
