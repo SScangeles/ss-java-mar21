@@ -18,11 +18,15 @@ public class LineTest {
 	@Test
 	public void getSlopeTest() {
 		//slope = 0
-		assertEquals(0, new Line(0,0,2,0));
+		assertEquals(0, new Line(0,0,2,0).getSlope(), 0.0001);
 		//slope = 1
-		assertEquals(1, new Line(0,0,1,1));
+		assertEquals(1, new Line(0,0,1,1).getSlope(), 0.0001);
+	}
+
+	@Test(expected = ArithmeticException.class)
+	public void getSlopeTestException() {
 		//divide by 0
-		assertEquals(new ArithmeticException(), new Line(0,0,0,1));
+		new Line(0,0,0,1).getSlope();
 	}
 
 	@Test
