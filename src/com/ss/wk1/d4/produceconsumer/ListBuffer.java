@@ -15,7 +15,10 @@ public class ListBuffer {
 	public ListBuffer(Integer buffSize) {
 		listBuff = new ArrayBlockingQueue<>(buffSize);
 	}
-
+	/**
+	 * 
+	 * @return
+	 */
 	public synchronized ArrayBlockingQueue<Integer> getListBuff() {
 		return listBuff;
 	}

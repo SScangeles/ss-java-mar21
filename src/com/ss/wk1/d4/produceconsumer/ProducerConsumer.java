@@ -16,7 +16,10 @@ public class ProducerConsumer {
 		consume = new Consumer(listBuff);
 		produce = new Producer(listBuff);
 	}
-	
+	/**
+	 * 
+	 * @return
+	 */
 	public boolean start() {
 		new Thread(consume).start();
 		new Thread(produce).start();

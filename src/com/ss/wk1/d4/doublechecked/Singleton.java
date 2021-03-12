@@ -5,14 +5,17 @@ package com.ss.wk1.d4.doublechecked;
 
 /**
  * @author Christian Angeles
- *
  */
 public class Singleton {
 	
 	private static Singleton instance = null;
 	
 	private Singleton() {}
-
+	/**
+	 * 
+	 * @param threadName
+	 * @return
+	 */
 	public static Singleton getInstance(String threadName) {
 		if(instance == null) {
 			synchronized(Singleton.class) {

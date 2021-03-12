@@ -5,7 +5,6 @@ package com.ss.wk1.d4.produceconsumer;
 
 /**
  * @author Christian Angeles
- *
  */
 public class Consumer implements Runnable {
 	private ListBuffer lb;

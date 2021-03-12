@@ -8,7 +8,10 @@ package com.ss.wk1.d4.doublechecked;
  *
  */
 public class DoubleChecked {
-	
+	/**
+	 * 
+	 * @return
+	 */
 	public boolean start() {
 		Runnable t1 = new Runnable() {
 			@Override
