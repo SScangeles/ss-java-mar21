@@ -22,9 +22,6 @@ import com.ss.wk1.d4.produceconsumer.ProducerConsumer;
  */
 public class DisplayProjectOutputs {
 
-	/**
-	 * @param args
-	 */
 	public static void main(String[] args) {
 //		GuessRng gr = new GuessRng();
 //		Patterns p = new Patterns();

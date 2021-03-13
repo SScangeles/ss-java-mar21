@@ -4,6 +4,7 @@
 package com.ss.wk1.d4.produceconsumer;
 
 /**
+ * Week 1, Day 4 - Producer-Consumer problem.
  * @author Christian Angeles
  */
 public class ProducerConsumer {
@@ -17,8 +18,7 @@ public class ProducerConsumer {
 		produce = new Producer(listBuff);
 	}
 	/**
-	 * 
-	 * @return
+	 * Starts producer-consumer project.
 	 */
 	public void start() {
 		new Thread(consume).start();
