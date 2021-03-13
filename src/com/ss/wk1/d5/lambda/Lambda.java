@@ -19,6 +19,7 @@ public class Lambda {
 	}
 	
 	public void start() {
-		strList.forEach( (n) -> System.out.println(n) );
+		String[] test = {"pikachu", "charzard", "exeggcute", "abbra", "eevee", "snorlax", "electrode"};
+		Arrays.sort(strList.toArray());
 	}
 }
