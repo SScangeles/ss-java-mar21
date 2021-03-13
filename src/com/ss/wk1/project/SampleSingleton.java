@@ -15,17 +15,43 @@ import java.sql.SQLException;
 /**
  * Fix the below Singleton class:
  */
-public final class SampleSingleton {
+//	public static class SampleSingleton {
+//	
+//		private static Connection conn = null;
+//		
+//		private static SampleSingleton instance = null;
+//		
+//		public static SampleSingleton getInstance() {
+//			return instance;
+//		}
+//		
+//		public static void databaseQuery(BigDecimal input) {
+//			conn = DriverManager.getConnection("url of database");
+//			Statement st = conn.createStatement();
+//			ResultSet rs = st.executeQuery("select id from table");
+//			int x = 0;
+//			while(rs.next()) {
+//				x = rs.getInt(1) * input;
+//			}
+//		}
+//	}
 
-	private static Connection conn = null;
+public class SampleSingleton {
+
+	private Connection conn = null;
 	
-	private static SampleSingleton instance = null;
+	private SampleSingleton instance = null;
 	
-	public static SampleSingleton getInstance() {
+	private SampleSingleton() {}
+	
+	public SampleSingleton getInstance() {
+		if(instance == null) {
+			instance = new SampleSingleton();
+		}
 		return instance;
 	}
 	
-	public static void databaseQuery(BigDecimal input) throws SQLException {
+	public void databaseQuery(BigDecimal input) throws SQLException {
 		conn = DriverManager.getConnection("url of database");
 		Statement st = conn.createStatement();
 		ResultSet rs = st.executeQuery("select id from table");
