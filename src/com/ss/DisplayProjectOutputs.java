@@ -14,6 +14,7 @@ import com.ss.wk1.d3.listdirectory.ListDirectory;
 import com.ss.wk1.d4.doublechecked.DoubleChecked;
 import com.ss.wk1.d4.deadlock.Deadlock;
 import com.ss.wk1.d4.produceconsumer.ProducerConsumer;
+import com.ss.wk1.d5.lambda.Lambda;
 
 /**
  * Class used to display outputs of projects. 
@@ -23,19 +24,20 @@ import com.ss.wk1.d4.produceconsumer.ProducerConsumer;
 public class DisplayProjectOutputs {
 
 	public static void main(String[] args) {
-//		GuessRng gr = new GuessRng();
-//		Patterns p = new Patterns();
-//		AddValues av = new AddValues();
-//		MaxNumber mn = new MaxNumber();
-//		Shapes s = new Shapes();
-//		CharCount cc = new CharCount();
-//		FileAppend fa = new FileAppend();
-		ListDirectory ld = new ListDirectory();
-//		DoubleChecked dc = new DoubleChecked();
-//		Deadlock dl = new Deadlock();
-//		ProducerConsumer pc = new ProducerConsumer();
+//		GuessRng grng = new GuessRng();
+//		Patterns pat = new Patterns();
+//		AddValues addval = new AddValues();
+//		MaxNumber maxnum = new MaxNumber();
+//		Shapes shapes = new Shapes();
+//		CharCount charcount = new CharCount();
+//		FileAppend fileapp = new FileAppend();
+//		ListDirectory listd = new ListDirectory();
+//		DoubleChecked dcheck = new DoubleChecked();
+//		Deadlock dlock = new Deadlock();
+//		ProducerConsumer prodc = new ProducerConsumer();
+		Lambda lamb = new Lambda();
 		
-		ld.start();
+		lamb.start();
 	}
 
 }
