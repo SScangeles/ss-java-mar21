@@ -13,7 +13,7 @@ public class ConsoleUserInput {
 	private Scanner inScan;
 	private StringBuilder input;
 	/**
-	 * Initialze Scanner and StringBuilder objects.
+	 * Initialize Scanner and StringBuilder objects.
 	 */
 	public ConsoleUserInput() {
 		inScan = new Scanner(System.in);
