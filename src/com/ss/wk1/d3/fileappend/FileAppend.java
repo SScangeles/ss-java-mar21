@@ -11,11 +11,9 @@ import com.ss.wk1.d1.guessrng.ConsoleUserInput;
  * @author Christian Angeles
  */
 public class FileAppend {
-	private FileOperations fileOps;
 	private ConsoleUserInput userIn;
 	
 	public FileAppend() {
-		fileOps = new FileOperations();
 		userIn = new ConsoleUserInput();
 	}
 	/**
@@ -25,7 +23,7 @@ public class FileAppend {
 		System.out.print("Enter text to append: ");
 		userIn.setInput();
 		try {
-			fileOps.appendToFile("resources/in/hello.txt", userIn.getInput().toString());
+			FileOperations.appendToFile("resources/in/hello.txt", userIn.getInput().toString());
 		}
 		catch(Exception e) {
 			e.printStackTrace();

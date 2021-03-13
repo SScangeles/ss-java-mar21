@@ -4,6 +4,8 @@ package com.ss.wk1.d1.patterns;
  * @author Christian Angeles
  */
 public class MakePatternsUtil {
+	
+	private MakePatternsUtil() {}
 	/**
 	 * Algorithm for pattern 1
 	 */

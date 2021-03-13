@@ -11,13 +11,11 @@ import com.ss.wk1.d1.guessrng.ConsoleUserInput;
  */
 public class CharCount {
 	private ConsoleUserInput userIn;
-	private FileOperations file;
 	private int charCount;
 	
 	public CharCount() {
 		super();
 		userIn = new ConsoleUserInput();
-		file = new FileOperations();
 		charCount = 0;
 	}
 	/**
@@ -27,7 +25,7 @@ public class CharCount {
 		System.out.print("Enter character to count: ");
 		userIn.setInput();
 		try {
-			charCount = file.countChar("resources/in/Lore.txt", userIn.getInput().toString());
+			charCount = FileOperations.countChar("resources/in/Lore.txt", userIn.getInput().toString());
 		}
 		catch(Exception e) {
 			e.printStackTrace();

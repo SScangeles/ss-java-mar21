@@ -15,13 +15,15 @@ import java.util.List;
  * @author Christian Angeles
  */
 public class FileOperations {
+	
+	private FileOperations() {}
 	/**
 	 * Counts the number of time a character appears in a file. Returns character count.
 	 * @param filePathName
 	 * @param letter
 	 * @return
 	 */
-	public Integer countChar(String filePathName, String letter) throws IOException {
+	public static Integer countChar(String filePathName, String letter) throws IOException {
 		int charCount = 0;
 		
 		try(FileInputStream fileIn = new FileInputStream(filePathName)){
@@ -39,7 +41,7 @@ public class FileOperations {
 	 * @param filePathName
 	 * @param addText
 	 */
-	public void appendToFile(String filePathName, String addText) throws IOException {
+	public static void appendToFile(String filePathName, String addText) throws IOException {
 		try(FileWriter fileWrite = new FileWriter(filePathName, true)){
 			fileWrite.append(addText);
 		}
@@ -49,7 +51,7 @@ public class FileOperations {
 	 * @param path
 	 * @return
 	 */
-	public List<String> listFileDir(String path) {
+	public static List<String> listFileDir(String path) {
 		File dir = new File(path);
 		List<String> list = new ArrayList<>();
 		

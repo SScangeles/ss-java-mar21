@@ -15,12 +15,10 @@ import com.ss.wk1.d1.guessrng.ConsoleUserInput;
  * @author Christian Angeles
  */
 public class ListDirectory {
-	private FileOperations fileOps;
 	private ConsoleUserInput userIn;
 	private List<String> listDir;
 	
 	public ListDirectory() {
-		fileOps = new FileOperations();
 		userIn = new ConsoleUserInput();
 		listDir = new ArrayList<>();
 	}
@@ -30,7 +28,7 @@ public class ListDirectory {
 	public void start() {
 		System.out.print("Enter path to list: ");
 		userIn.setInput();
-		listDir = fileOps.listFileDir(userIn.getInput().toString());
+		listDir = FileOperations.listFileDir(userIn.getInput().toString());
 
 		for(String filename: listDir) {
 			System.out.println(filename);

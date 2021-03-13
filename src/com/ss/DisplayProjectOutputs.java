@@ -33,12 +33,12 @@ public class DisplayProjectOutputs {
 //		Shapes s = new Shapes();
 //		CharCount cc = new CharCount();
 //		FileAppend fa = new FileAppend();
-//		ListDirectory ld = new ListDirectory();
+		ListDirectory ld = new ListDirectory();
 //		DoubleChecked dc = new DoubleChecked();
 //		Deadlock dl = new Deadlock();
-		ProducerConsumer pc = new ProducerConsumer();
+//		ProducerConsumer pc = new ProducerConsumer();
 		
-		pc.start();
+		ld.start();
 	}
 
 }
