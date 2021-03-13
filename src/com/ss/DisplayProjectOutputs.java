@@ -26,13 +26,13 @@ public class DisplayProjectOutputs {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		GuessRng guessNum = new GuessRng();
-		CharCount countChar = new CharCount();
-		FileAppend fileApp = new FileAppend();
-		ListDirectory listDir = new ListDirectory();
-		DoubleChecked checked = new DoubleChecked();
+//		GuessRng gr = new GuessRng();
+//		CharCount cC = new CharCount();
+//		FileAppend fa = new FileAppend();
+//		ListDirectory ld = new ListDirectory();
+//		DoubleChecked dc = new DoubleChecked();
+//		Deadlock dl = new Deadlock();
 		ProducerConsumer pc = new ProducerConsumer();
-		Deadlock dl = new Deadlock();
 		
 		pc.start();
 	}

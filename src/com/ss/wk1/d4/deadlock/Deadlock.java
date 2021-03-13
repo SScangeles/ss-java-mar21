@@ -4,6 +4,7 @@
 package com.ss.wk1.d4.deadlock;
 
 /**
+ * Week 1, Day 4 - Deadlock
  * @author Christian Angeles
  */
 public class Deadlock {
@@ -14,22 +15,20 @@ public class Deadlock {
 		secondNum = 2;
 	}
 	/**
-	 * 
-	 * @return
+	 * Starts deadlock project.
 	 */
-	public boolean start() {
+	public void start() {
 		startNewThread("Thread 1", firstNum, secondNum);
 		startNewThread("Thread 2", secondNum, firstNum);
-		return true;
 	}
 	/**
-	 * 
+	 * Starts a new thread for deadlock project. Input thread's name for console output purposes.
+	 * Input two integer objects to be locked by a particular thread.
 	 * @param threadName
 	 * @param firstInt
 	 * @param secondInt
-	 * @return
 	 */
-	public boolean startNewThread(String threadName, Integer firstInt, Integer secondInt) {
+	public void startNewThread(String threadName, Integer firstInt, Integer secondInt) {
 		Runnable t1 = new Runnable() {
 			@Override
 			public void run() {
@@ -48,6 +47,5 @@ public class Deadlock {
 		};
 		new Thread(t1).start();
 		System.out.println(threadName+" complete.");
-		return true;
 	}
 }

@@ -4,15 +4,14 @@
 package com.ss.wk1.d4.doublechecked;
 
 /**
+ * Week 1, Day 4 - Double check locking.
  * @author Christian Angeles
- *
  */
 public class DoubleChecked {
 	/**
-	 * 
-	 * @return
+	 * Starts double checked locking project. Creates two threads to access a single resource.
 	 */
-	public boolean start() {
+	public void start() {
 		Runnable t1 = new Runnable() {
 			@Override
 			public void run() {
@@ -41,6 +40,5 @@ public class DoubleChecked {
 		
 		new Thread(t1).start();
 		new Thread(t2).start();
-		return true;
 	}
 }

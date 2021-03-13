@@ -2,9 +2,8 @@
  * 
  */
 package com.ss.wk1.d4.line;
-
 /**
- * @author Christian Angeles
+ * Line class to perform tests.
  */
 public class Line {
 	  // construct a line object

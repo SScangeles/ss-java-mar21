@@ -12,8 +12,8 @@ import org.junit.Test;
 import com.ss.wk1.d4.line.Line;
 
 /**
+ * Test cases for Line class.
  * @author Christian Angeles
- *
  */
 public class LineTest {
 	

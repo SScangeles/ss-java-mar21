@@ -20,9 +20,8 @@ public class ProducerConsumer {
 	 * 
 	 * @return
 	 */
-	public boolean start() {
+	public void start() {
 		new Thread(consume).start();
 		new Thread(produce).start();
-		return true;
 	}
 }

@@ -4,8 +4,8 @@
 package com.ss.wk1.d4.produceconsumer;
 
 /**
+ * Producer class to produce items for a bound buffered list.
  * @author Christian Angeles
- *
  */
 public class Producer implements Runnable {
 	private ListBuffer lb;
@@ -17,16 +17,13 @@ public class Producer implements Runnable {
 	@Override
 	public void run() {
 		try {
-			lb.getListBuff().offer(1);
-			Thread.sleep(500);
-			lb.getListBuff().offer(2);
-			Thread.sleep(500);
-			lb.getListBuff().offer(3);
-			Thread.sleep(500);
+			for(int i = 0; i < 10; ++i) {
+				lb.setListItem(i);
+				Thread.sleep(250);
+			}
 		}
 		catch(Exception e) {
 			e.printStackTrace();
 		}
 	}
-	
 }

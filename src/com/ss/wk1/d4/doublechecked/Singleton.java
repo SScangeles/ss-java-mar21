@@ -4,6 +4,7 @@
 package com.ss.wk1.d4.doublechecked;
 
 /**
+ * Singleton class to be accessed by two threads.
  * @author Christian Angeles
  */
 public class Singleton {
@@ -12,7 +13,7 @@ public class Singleton {
 	
 	private Singleton() {}
 	/**
-	 * 
+	 * Returns the instance of the singleton object. Input thread name for console output purposes.
 	 * @param threadName
 	 * @return
 	 */
