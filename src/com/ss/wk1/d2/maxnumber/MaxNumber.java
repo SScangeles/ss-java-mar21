@@ -10,9 +10,9 @@ package com.ss.wk1.d2.maxnumber;
 public class MaxNumber {
 
 	/**
-	 * @param args
+	 * Starts max number project.
 	 */
-	public static void main(String[] args) {
+	public void start() {
 		CreateArray numbers = new CreateArray(5, 10);
 		
 		MaxNumberUtil.printArray(numbers);

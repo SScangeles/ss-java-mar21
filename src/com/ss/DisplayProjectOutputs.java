@@ -27,7 +27,11 @@ public class DisplayProjectOutputs {
 	 */
 	public static void main(String[] args) {
 //		GuessRng gr = new GuessRng();
-//		CharCount cC = new CharCount();
+//		Patterns p = new Patterns();
+//		AddValues av = new AddValues();
+//		MaxNumber mn = new MaxNumber();
+//		Shapes s = new Shapes();
+//		CharCount cc = new CharCount();
 //		FileAppend fa = new FileAppend();
 //		ListDirectory ld = new ListDirectory();
 //		DoubleChecked dc = new DoubleChecked();

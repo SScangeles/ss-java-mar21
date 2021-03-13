@@ -9,9 +9,9 @@ package com.ss.wk1.d1.patterns;
  */
 public class Patterns {
 	/**
-	 * @param args
+	 * Starts patterns project.
 	 */
-	public static void main(String[] args) {
+	public void start() {
 		MakePatterns mp = new MakePatterns();
 		
 		mp.printPattern(1);

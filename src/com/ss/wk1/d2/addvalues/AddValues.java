@@ -11,9 +11,9 @@ import java.util.Scanner;
  */
 public class AddValues {
 	/**
-	 * @param args
+	 * Starts add-values project.
 	 */
-	public static void main(String[] args) {
+	public void start() {
 		Scanner inputScanner = new Scanner(System.in);
 		UserValues userVal = new UserValues();
 		

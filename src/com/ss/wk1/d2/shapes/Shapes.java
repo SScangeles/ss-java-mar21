@@ -10,9 +10,9 @@ package com.ss.wk1.d2.shapes;
 public class Shapes {
 
 	/**
-	 * @param args
+	 * Start shapes project.
 	 */
-	public static void main(String[] args) {
+	public void start() {
 		Rectangle rectangle = new Rectangle(10, 12);
 		Triangle triangle = new Triangle(5, 9);
 		Circle circle = new Circle(3);
