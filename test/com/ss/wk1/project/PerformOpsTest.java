@@ -17,40 +17,40 @@ public class PerformOpsTest {
 	@Test
 	public void isOddTest() {
 		//true
-		assertTrue(PerformOps.isOdd(1).performOps());
-		assertTrue(PerformOps.isOdd(3).performOps());
-		assertTrue(PerformOps.isOdd(5).performOps());
+		assertTrue(PerformOps.isOdd(1).check());
+		assertTrue(PerformOps.isOdd(3).check());
+		assertTrue(PerformOps.isOdd(5).check());
 		
 		//false
-		assertFalse(PerformOps.isOdd(2).performOps());
-		assertFalse(PerformOps.isOdd(4).performOps());
-		assertFalse(PerformOps.isOdd(6).performOps());
+		assertFalse(PerformOps.isOdd(2).check());
+		assertFalse(PerformOps.isOdd(4).check());
+		assertFalse(PerformOps.isOdd(6).check());
 	}
 	
 	@Test
 	public void isPrimeTest() {
 
 		//true
-		assertTrue(PerformOps.isPrime(3).performOps());
-		assertTrue(PerformOps.isPrime(7).performOps());
-		assertTrue(PerformOps.isPrime(97).performOps());
+		assertTrue(PerformOps.isPrime(3).check());
+		assertTrue(PerformOps.isPrime(7).check());
+		assertTrue(PerformOps.isPrime(97).check());
 		
 		//false
-		assertFalse(PerformOps.isPrime(1).performOps());
-		assertFalse(PerformOps.isPrime(9).performOps());
-		assertFalse(PerformOps.isPrime(49).performOps());
+		assertFalse(PerformOps.isPrime(1).check());
+		assertFalse(PerformOps.isPrime(9).check());
+		assertFalse(PerformOps.isPrime(49).check());
 	}
 	
 	@Test
 	public void isPalindrome() {
 		//true
-		assertTrue(PerformOps.isPalindrome(12021).performOps());
-		assertTrue(PerformOps.isPalindrome(1221).performOps());
-		assertTrue(PerformOps.isPalindrome(898).performOps());
+		assertTrue(PerformOps.isPalindrome(12021).check());
+		assertTrue(PerformOps.isPalindrome(1221).check());
+		assertTrue(PerformOps.isPalindrome(898).check());
 
 		//false
-		assertFalse(PerformOps.isPalindrome(1101).performOps());
-		assertFalse(PerformOps.isPalindrome(123).performOps());
-		assertFalse(PerformOps.isPalindrome(89).performOps());
+		assertFalse(PerformOps.isPalindrome(1101).check());
+		assertFalse(PerformOps.isPalindrome(123).check());
+		assertFalse(PerformOps.isPalindrome(89).check());
 	}
 }

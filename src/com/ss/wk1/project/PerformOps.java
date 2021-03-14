@@ -12,6 +12,8 @@ import java.util.List;
  *
  */
 public class PerformOps {
+	
+	private PerformOps() {}
 
 	public static PerformOpsFI isOdd(Integer num) {
 		return () -> {
