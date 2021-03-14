@@ -40,11 +40,11 @@ public class SampleSingleton {
 
 	private Connection conn = null;
 	
-	private SampleSingleton instance = null;
+	private static SampleSingleton instance = null;
 	
 	private SampleSingleton() {}
 	
-	public SampleSingleton getInstance() {
+	public static SampleSingleton getInstance() {
 		if(instance == null) {
 			instance = new SampleSingleton();
 		}

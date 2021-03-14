@@ -9,8 +9,15 @@ package com.ss.wk1.d5.lambda;
 public class LambdaUtil {
 	
 	private LambdaUtil() {}
-	
-	public static void sortByLetter() {
-		
+	/**
+	 * 
+	 * @param str
+	 * @return
+	 */
+	public static Integer sortEFirstUtil(String str) {
+		if(str.charAt(0) == 'e') {
+			return -1;
+		}
+		return 0;
 	}
 }

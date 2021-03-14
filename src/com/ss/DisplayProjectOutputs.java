@@ -17,8 +17,7 @@ import com.ss.wk1.d4.produceconsumer.ProducerConsumer;
 import com.ss.wk1.d5.lambda.Lambda;
 
 /**
- * Class used to display outputs of projects. 
- * Note: Refactor some projects for re-usability
+ * Class used to display outputs for projects d1 to d4. 
  * @author Christian Angeles
  */
 public class DisplayProjectOutputs {
@@ -31,13 +30,12 @@ public class DisplayProjectOutputs {
 //		Shapes shapes = new Shapes();
 //		CharCount charcount = new CharCount();
 //		FileAppend fileapp = new FileAppend();
-//		ListDirectory listd = new ListDirectory();
+		ListDirectory listd = new ListDirectory();
 //		DoubleChecked dcheck = new DoubleChecked();
 //		Deadlock dlock = new Deadlock();
 //		ProducerConsumer prodc = new ProducerConsumer();
-		Lambda lamb = new Lambda();
 		
-		lamb.start();
+		listd.start();
 	}
 
 }
