@@ -22,6 +22,6 @@ public class LambdaUtilTest {
 		
 		//if string's first character is not an 'e' expect 0
 		expectNum = 0;
-		assertEquals(expectNum, LambdaUtil.sortEFirstUtil("e"));
+		assertEquals(expectNum, LambdaUtil.sortEFirstUtil("a"));
 	}
 }

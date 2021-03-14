@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.ss;
+package com.ss.wk1;
 
 import com.ss.wk1.d1.guessrng.GuessRng;
 import com.ss.wk1.d1.patterns.Patterns;
