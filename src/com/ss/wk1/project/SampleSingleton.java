@@ -11,9 +11,8 @@ import java.sql.Statement;
 
 import java.sql.SQLException;
 
-
 /**
- * Fix the below Singleton class:
+ * Fix the Singleton class.
  */
 //	public static class SampleSingleton {
 //	
@@ -51,13 +50,18 @@ public class SampleSingleton {
 		return instance;
 	}
 	
-	public void databaseQuery(BigDecimal input) throws SQLException {
-		conn = DriverManager.getConnection("url of database");
-		Statement st = conn.createStatement();
-		ResultSet rs = st.executeQuery("select id from table");
-		int x = 0;
-		while(rs.next()) {
-//			x = rs.getInt(1) * input;
+	public void databaseQuery(BigDecimal input) {
+		try {
+			conn = DriverManager.getConnection("url of database");
+			Statement st = conn.createStatement();
+			ResultSet rs = st.executeQuery("select id from table");
+			int x = 0;
+			while(rs.next()) {
+				x = rs.getInt(1) * input.intValue();
+			}
+		}
+		catch(SQLException e) {
+			e.printStackTrace();
 		}
 	}
 }
