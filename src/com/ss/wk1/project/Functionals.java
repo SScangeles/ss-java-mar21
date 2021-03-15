@@ -13,14 +13,12 @@ import java.util.stream.Collectors;
  *
  */
 public class Functionals {
-	
-	private Functionals() {}
 	/**
 	 * 
 	 * @param listPosNum
 	 * @return
 	 */
-	public static List<Integer> rightDigit(List<Integer> listPosNum){
+	public List<Integer> rightDigit(List<Integer> listPosNum){
 		if(listPosNum == null)
 			return new ArrayList<Integer>(Arrays.asList());
 		return listPosNum.stream().map((num) -> num % 10).collect(Collectors.toList());
@@ -30,7 +28,7 @@ public class Functionals {
 	 * @param listNum
 	 * @return
 	 */
-	public static List<Integer> doubling(List<Integer> listNum){
+	public List<Integer> doubling(List<Integer> listNum){
 		if(listNum == null)
 			return new ArrayList<Integer>(Arrays.asList());
 		return listNum.stream().map((num) -> num * 2).collect(Collectors.toList());
@@ -40,7 +38,7 @@ public class Functionals {
 	 * @param listStr
 	 * @return
 	 */
-	public static List<String> noX(List<String> listStr){
+	public List<String> noX(List<String> listStr){
 		if(listStr == null)
 			return new ArrayList<String>(Arrays.asList());
 		return listStr.stream().map((str)-> {

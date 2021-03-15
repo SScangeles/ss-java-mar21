@@ -8,14 +8,12 @@ package com.ss.wk1.project;
  *
  */
 public class PerformOpsUtil {
-	
-	private PerformOpsUtil() {}
 	/**
 	 * 
 	 * @param num
 	 * @return
 	 */
-	public static PerformOpsFI isOdd(Integer num) {
+	public PerformOpsFI isOdd(Integer num) {
 		return () -> {
 			return (num % 2) > 0;
 		};
@@ -25,7 +23,7 @@ public class PerformOpsUtil {
 	 * @param num
 	 * @return
 	 */
-	public static PerformOpsFI isPrime(Integer num) {
+	public PerformOpsFI isPrime(Integer num) {
 		return () -> {
 			if(num < 2) {
 				return false;
@@ -45,7 +43,7 @@ public class PerformOpsUtil {
 	 * @param num
 	 * @return
 	 */
-	public static PerformOpsFI isPalindrome(Integer num) {
+	public PerformOpsFI isPalindrome(Integer num) {
 		return () -> {
 			StringBuilder temp = new StringBuilder();
 			temp.append(num.toString());

@@ -9,7 +9,7 @@ public class MaxNumberUtil {
 	 * Input parameter is CreateArray object.
 	 * @param arrNumbers
 	 */
-	public static void printArray(CreateArray arrNumbers) {
+	public void printArray(CreateArray arrNumbers) {
 		for(int i = 0; i < arrNumbers.getNumRows(); ++i) {
 			for(int j = 0; j < arrNumbers.getNumCols(); ++j) {
 				System.out.printf("["+arrNumbers.getArray()[i][j]+"]\t");
@@ -22,7 +22,7 @@ public class MaxNumberUtil {
 	 * Input parameter is CreateArray object.
 	 * @param arrNumbers
 	 */
-	public static void getMaxNum(CreateArray arrNumbers) {
+	public void getMaxNum(CreateArray arrNumbers) {
 		int maxNum = arrNumbers.getArray()[0][0];
 		for(int i = 0; i < arrNumbers.getNumRows(); ++i) {
 			for(int j = 0; j < arrNumbers.getNumCols(); ++j) {
@@ -38,7 +38,7 @@ public class MaxNumberUtil {
 	 * Input parameter is CreateArray object.
 	 * @param arrNumbers
 	 */
-	public static void getPosition(CreateArray arrNumbers) {
+	public void getPosition(CreateArray arrNumbers) {
 		int row = 0, col = 0;
 		for(int i = 0; i < arrNumbers.getNumRows(); ++i) {
 			for(int j = 0; j < arrNumbers.getNumCols(); ++j) {

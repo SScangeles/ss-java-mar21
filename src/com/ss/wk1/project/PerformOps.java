@@ -13,15 +13,17 @@ import com.ss.wk1.d3.charcount.FileOperations;
  *
  */
 public class PerformOps {
-
+	private PerformOpsUtil pOpsUtil = new PerformOpsUtil();
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
+		FileOperations fileOps = new FileOperations();
+		PerformOps pOps = new PerformOps();
 		List<String> list = new ArrayList<>();
 		
 		try {
-			list = FileOperations.getFileContents("resources/in/performOpsInput.txt");
+			list = fileOps.getFileContents("resources/in/performOpsInput.txt");
 		}
 		catch(Exception e) {
 			e.printStackTrace();
@@ -31,7 +33,7 @@ public class PerformOps {
 		for(int i = 1; i <= row; ++i) {
 			int func = Integer.parseInt(list.get(i).toString().split(" ")[0]);
 			int num = Integer.parseInt(list.get(i).toString().split(" ")[1]);
-			getFunc(func, num);
+			pOps.getFunc(func, num);
 		}
 	}
 	/**
@@ -39,10 +41,10 @@ public class PerformOps {
 	 * @param func
 	 * @param num
 	 */
-	public static void getFunc(Integer func, Integer num) {
+	public void getFunc(Integer func, Integer num) {
 		switch(func) {
 		case 1:
-			if(PerformOpsUtil.isOdd(num).check()) {
+			if(pOpsUtil.isOdd(num).check()) {
 				System.out.println("ODD");
 			}
 			else {
@@ -50,7 +52,7 @@ public class PerformOps {
 			}
 			break;
 		case 2:
-			if(PerformOpsUtil.isPrime(num).check()) {
+			if(pOpsUtil.isPrime(num).check()) {
 				System.out.println("PRIME");
 			}
 			else {
@@ -58,7 +60,7 @@ public class PerformOps {
 			}
 			break;
 		case 3:
-			if(PerformOpsUtil.isPalindrome(num).check()) {
+			if(pOpsUtil.isPalindrome(num).check()) {
 				System.out.println("PALINDROME");
 			}
 			else {

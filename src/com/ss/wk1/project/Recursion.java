@@ -11,8 +11,6 @@ import java.util.List;
  *
  */
 public class Recursion {
-	
-	public Recursion() {}
 	/**
 	 * 
 	 * @param index
@@ -20,7 +18,7 @@ public class Recursion {
 	 * @param target
 	 * @return
 	 */
-	public static Boolean groupSumClump(Integer index, Integer[] arr, Integer target) {
+	public Boolean groupSumClump(Integer index, Integer[] arr, Integer target) {
 		if(arr==null) {
 			return false;
 		}

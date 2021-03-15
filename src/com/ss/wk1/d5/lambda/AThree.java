@@ -13,14 +13,12 @@ import java.util.stream.Collectors;
  *
  */
 public class AThree {
-	
-	public AThree() {}
 	/**
 	 * 
 	 * @param listStr
 	 * @return
 	 */
-	public static List<String> threeLowerA(List<String> listStr) {
+	public List<String> threeLowerA(List<String> listStr) {
 		if(listStr == null)
 			return new ArrayList<String>(Arrays.asList());
 		return listStr.stream().filter( (str) -> str.length() == 3 && str.toCharArray()[0] == 'a').collect(Collectors.toList());

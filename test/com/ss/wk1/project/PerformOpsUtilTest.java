@@ -13,44 +13,45 @@ import org.junit.Test;
  *
  */
 public class PerformOpsUtilTest {
+	PerformOpsUtil pOpsUtil = new PerformOpsUtil();
 
 	@Test
 	public void isOddTest() {
 		//true
-		assertTrue(PerformOpsUtil.isOdd(1).check());
-		assertTrue(PerformOpsUtil.isOdd(3).check());
-		assertTrue(PerformOpsUtil.isOdd(5).check());
+		assertTrue(pOpsUtil.isOdd(1).check());
+		assertTrue(pOpsUtil.isOdd(3).check());
+		assertTrue(pOpsUtil.isOdd(5).check());
 		
 		//false
-		assertFalse(PerformOpsUtil.isOdd(2).check());
-		assertFalse(PerformOpsUtil.isOdd(4).check());
-		assertFalse(PerformOpsUtil.isOdd(6).check());
+		assertFalse(pOpsUtil.isOdd(2).check());
+		assertFalse(pOpsUtil.isOdd(4).check());
+		assertFalse(pOpsUtil.isOdd(6).check());
 	}
 	
 	@Test
 	public void isPrimeTest() {
 
 		//true
-		assertTrue(PerformOpsUtil.isPrime(3).check());
-		assertTrue(PerformOpsUtil.isPrime(7).check());
-		assertTrue(PerformOpsUtil.isPrime(97).check());
+		assertTrue(pOpsUtil.isPrime(3).check());
+		assertTrue(pOpsUtil.isPrime(7).check());
+		assertTrue(pOpsUtil.isPrime(97).check());
 		
 		//false
-		assertFalse(PerformOpsUtil.isPrime(1).check());
-		assertFalse(PerformOpsUtil.isPrime(9).check());
-		assertFalse(PerformOpsUtil.isPrime(49).check());
+		assertFalse(pOpsUtil.isPrime(1).check());
+		assertFalse(pOpsUtil.isPrime(9).check());
+		assertFalse(pOpsUtil.isPrime(49).check());
 	}
 	
 	@Test
 	public void isPalindrome() {
 		//true
-		assertTrue(PerformOpsUtil.isPalindrome(12021).check());
-		assertTrue(PerformOpsUtil.isPalindrome(1221).check());
-		assertTrue(PerformOpsUtil.isPalindrome(898).check());
+		assertTrue(pOpsUtil.isPalindrome(12021).check());
+		assertTrue(pOpsUtil.isPalindrome(1221).check());
+		assertTrue(pOpsUtil.isPalindrome(898).check());
 
 		//false
-		assertFalse(PerformOpsUtil.isPalindrome(1101).check());
-		assertFalse(PerformOpsUtil.isPalindrome(123).check());
-		assertFalse(PerformOpsUtil.isPalindrome(89).check());
+		assertFalse(pOpsUtil.isPalindrome(1101).check());
+		assertFalse(pOpsUtil.isPalindrome(123).check());
+		assertFalse(pOpsUtil.isPalindrome(89).check());
 	}
 }

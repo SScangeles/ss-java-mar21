@@ -11,14 +11,12 @@ import java.util.stream.Collectors;
  *
  */
 public class EvenOdd {
-	
-	public EvenOdd() {}
 	/**
 	 * 
 	 * @param numList
 	 * @return
 	 */
-	public static String numListToString(List<Integer> numList) {
+	public String numListToString(List<Integer> numList) {
 		if(numList==null) {
 			return "";
 		}

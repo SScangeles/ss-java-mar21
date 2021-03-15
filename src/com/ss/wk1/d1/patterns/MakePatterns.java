@@ -9,21 +9,22 @@ public class MakePatterns {
 	 * @param patternNum
 	 */
 	public void printPattern(int patternNum) {
+		MakePatternsUtil patternsUtil = new MakePatternsUtil();
 
 		System.out.println(patternNum + ")");
 		
 		switch(patternNum) {
 		case 1:
-			MakePatternsUtil.patternOne();
+			patternsUtil.patternOne();
 			System.out.println("......");
 			break;
 		case 2:
-			MakePatternsUtil.patternTwo();
+			patternsUtil.patternTwo();
 			System.out.println(".....");
 			break;
 		case 3:
 			System.out.println(".....");
-			MakePatternsUtil.patternThree();
+			patternsUtil.patternThree();
 			break;
 		}
 

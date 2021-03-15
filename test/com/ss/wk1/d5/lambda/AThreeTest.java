@@ -19,14 +19,15 @@ import org.junit.Test;
 public class AThreeTest {
 	List<String> actual = new ArrayList<>();
 	List<String> expect = new ArrayList<>();
+	AThree at = new AThree();
 
 	@Test
 	public void threeLowerATest() {
 		actual = Arrays.asList("aaa", "abra", "Abe", "cat", "ava");
 		expect = Arrays.asList("aaa", "ava");
-		assertEquals(expect, AThree.threeLowerA(actual));
+		assertEquals(expect, at.threeLowerA(actual));
 		
 		expect = Arrays.asList("aaa", "ava", "Abe");
-		assertNotEquals(expect, AThree.threeLowerA(actual));
+		assertNotEquals(expect, at.threeLowerA(actual));
 	}
 }

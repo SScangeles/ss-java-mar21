@@ -8,15 +8,13 @@ package com.ss.wk1.d1.guessrng;
  * @author Christian Angeles
  */
 public class GuessRngUtil {
-	
-	private GuessRngUtil() {}
 	/**
 	 * Checks if user number is between +/-10 of the random number. Returns true if guess is correct.
 	 * @param userNum
 	 * @param randNum
 	 * @return
 	 */
-	public static boolean checkNum(int userNum, int randNum) {
+	public boolean checkNum(int userNum, int randNum) {
 		int randNumLow, randNumHigh;
 		
 		if(randNum > 10) {

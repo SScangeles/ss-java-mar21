@@ -26,9 +26,10 @@ public class ListDirectory {
 	 * Starts list directory project.
 	 */
 	public void start() {
+		FileOperations fileOps = new FileOperations();
 		System.out.print("Enter path to list: ");
 		userIn.setInput();
-		listDir = FileOperations.listFileDir(userIn.getInput().toString());
+		listDir = fileOps.listFileDir(userIn.getInput().toString());
 
 		for(String filename: listDir) {
 			System.out.println(filename);

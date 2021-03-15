@@ -20,10 +20,11 @@ public class FileAppend {
 	 * Starts file appending project.
 	 */
 	public void start() {
+		FileOperations fileOps = new FileOperations();
 		System.out.print("Enter text to append: ");
 		userIn.setInput();
 		try {
-			FileOperations.appendToFile("resources/in/hello.txt", userIn.getInput().toString());
+			fileOps.appendToFile("resources/in/hello.txt", userIn.getInput().toString());
 		}
 		catch(Exception e) {
 			e.printStackTrace();

@@ -4,6 +4,7 @@ package com.ss.wk1.d1.guessrng;
  * @author Christian Angeles
  */
 public class GuessRng {
+	private GuessRngUtil rngUtil;
 	private ConsoleUserInput userIn;
 	private RandomNumber rng;
 	private ParseNumInput parseNum;
@@ -11,6 +12,7 @@ public class GuessRng {
 	private Integer numChance, userNum;
 	
 	public GuessRng() {
+		rngUtil = new GuessRngUtil();
 		userIn = new ConsoleUserInput();
 		rng = new RandomNumber();
 		parseNum = new ParseNumInput();
@@ -26,7 +28,7 @@ public class GuessRng {
 			numChance += 1;
 			
 			if(userNum != null) {
-				winState = GuessRngUtil.checkNum(userNum, rng.getPosRandNumber(100));
+				winState = rngUtil.checkNum(userNum, rng.getPosRandNumber(100));
 			}
 			
 			if(winState) {

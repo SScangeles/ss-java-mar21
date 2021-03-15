@@ -4,12 +4,10 @@ package com.ss.wk1.d1.patterns;
  * @author Christian Angeles
  */
 public class MakePatternsUtil {
-	
-	private MakePatternsUtil() {}
 	/**
 	 * Algorithm for pattern 1
 	 */
-	public static void patternOne() {
+	public void patternOne() {
 		for(int i = 0; i < 4; ++i) {
 			for(int j = 0; j <= i; ++j) {
 				System.out.print('*');
@@ -20,7 +18,7 @@ public class MakePatternsUtil {
 	/**
 	 * Algorithm for pattern 2
 	 */
-	public static void patternTwo() {
+	public void patternTwo() {
 		for(int i = 0; i < 4; ++i) {
 			String star = "*";
 			String whiteSpace = "";
@@ -36,7 +34,7 @@ public class MakePatternsUtil {
 	/**
 	 * Algorithm for pattern 3
 	 */
-	public static void patternThree() {
+	public void patternThree() {
 		for(int i = 4; i > 0; --i) {
 			for(int j = 0; j < i; ++j) {
 				System.out.print('*');
@@ -47,7 +45,7 @@ public class MakePatternsUtil {
 	/**
 	 * Algorithm for pattern 4
 	 */
-	public static void patternFour() {
+	public void patternFour() {
 		for(int i = 0; i < 4; ++i) {
 			String star = " *";
 			String whiteSpace = "";
@@ -63,7 +61,7 @@ public class MakePatternsUtil {
 	/**
 	 * Algorithm for pattern 5
 	 */
-	public static void patternFive() {
+	public void patternFive() {
 		for(int i = 4; i > 0; --i) {
 			String star = "  ";
 			String whiteSpace = "";

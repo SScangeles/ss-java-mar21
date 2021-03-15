@@ -22,10 +22,11 @@ public class CharCount {
 	 * Starts character count project.
 	 */
 	public void start() {
+		FileOperations fileOps = new FileOperations();
 		System.out.print("Enter character to count: ");
 		userIn.setInput();
 		try {
-			charCount = FileOperations.countChar("resources/in/Lorem.txt", userIn.getInput().toString());
+			charCount = fileOps.countChar("resources/in/Lorem.txt", userIn.getInput().toString());
 		}
 		catch(Exception e) {
 			e.printStackTrace();

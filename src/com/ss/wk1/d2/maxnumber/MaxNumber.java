@@ -13,11 +13,12 @@ public class MaxNumber {
 	 * Starts max number project.
 	 */
 	public void start() {
+		MaxNumberUtil maxnum = new MaxNumberUtil();
 		CreateArray numbers = new CreateArray(5, 10);
 		
-		MaxNumberUtil.printArray(numbers);
-		MaxNumberUtil.getMaxNum(numbers);
-		MaxNumberUtil.getPosition(numbers);
+		maxnum.printArray(numbers);
+		maxnum.getMaxNum(numbers);
+		maxnum.getPosition(numbers);
 	}
 
 }

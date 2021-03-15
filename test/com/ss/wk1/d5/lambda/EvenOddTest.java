@@ -18,13 +18,14 @@ import org.junit.Test;
  */
 public class EvenOddTest {
 	List<Integer> actual = new ArrayList<>();
+	EvenOdd eo = new EvenOdd();
 
 	@Test
 	public void numListToStringTest() {
 		actual = Arrays.asList(3,44);
-		assertEquals("'o3,e44'", EvenOdd.numListToString(actual));
+		assertEquals("'o3,e44'", eo.numListToString(actual));
 		
 		actual = Arrays.asList(3,44);
-		assertNotEquals("o3,e44", EvenOdd.numListToString(actual));
+		assertNotEquals("o3,e44", eo.numListToString(actual));
 	}
 }
