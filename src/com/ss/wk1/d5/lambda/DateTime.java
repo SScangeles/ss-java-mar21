@@ -28,5 +28,9 @@ public class DateTime {
 		ZoneId est = TimeZone.getTimeZone("America/New_York").toZoneId();
 		System.out.println("EST: "+zdt.withZoneSameInstant(est).format(zdtf));
 		
+		DateTimeFormatter strFormat = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
+		String dtStr = zdt.withZoneSameInstant(est).format(strFormat).toString();
+		System.out.println(dtStr);
+		
 	}
 }
