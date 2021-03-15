@@ -4,7 +4,6 @@
 package com.ss.wk1.project;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -20,7 +19,7 @@ public class Functionals {
 	 */
 	public List<Integer> rightDigit(List<Integer> listPosNum){
 		if(listPosNum == null)
-			return new ArrayList<Integer>(Arrays.asList());
+			return new ArrayList<Integer>();
 		return listPosNum.stream().map((num) -> num % 10).collect(Collectors.toList());
 	}
 	/**
@@ -30,7 +29,7 @@ public class Functionals {
 	 */
 	public List<Integer> doubling(List<Integer> listNum){
 		if(listNum == null)
-			return new ArrayList<Integer>(Arrays.asList());
+			return new ArrayList<Integer>();
 		return listNum.stream().map((num) -> num * 2).collect(Collectors.toList());
 	}
 	/**
@@ -40,7 +39,7 @@ public class Functionals {
 	 */
 	public List<String> noX(List<String> listStr){
 		if(listStr == null)
-			return new ArrayList<String>(Arrays.asList());
+			return new ArrayList<String>();
 		return listStr.stream().map((str)-> {
 			StringBuilder temp = new StringBuilder();
 			for(char c: str.toCharArray()) {
