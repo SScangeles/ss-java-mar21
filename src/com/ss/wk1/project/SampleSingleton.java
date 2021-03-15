@@ -45,7 +45,11 @@ public class SampleSingleton {
 	
 	public static SampleSingleton getInstance() {
 		if(instance == null) {
-			instance = new SampleSingleton();
+			synchronized (instance) {
+				if(instance == null) {
+					instance = new SampleSingleton();
+				}
+			}
 		}
 		return instance;
 	}
@@ -57,7 +61,7 @@ public class SampleSingleton {
 			ResultSet rs = st.executeQuery("select id from table");
 			int x = 0;
 			while(rs.next()) {
-				x = rs.getInt(1) * input.intValue();
+				x = rs.getInt(1) * input.intValueExact();
 			}
 		}
 		catch(SQLException e) {

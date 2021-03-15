@@ -4,48 +4,69 @@
 package com.ss.wk1.project;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
+
+import com.ss.wk1.d3.charcount.FileOperations;
 
 /**
  * @author Christian Angeles
  *
  */
 public class PerformOps {
-	
-	private PerformOps() {}
 
-	public static PerformOpsFI isOdd(Integer num) {
-		return () -> {
-			return (num % 2) > 0;
-		};
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		List<String> list = new ArrayList<>();
+		
+		try {
+			list = FileOperations.getFileContents("resources/in/performOpsInput.txt");
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+		int row = Integer.parseInt(list.get(0).toString());
+		for(int i = 1; i <= row; ++i) {
+			int func = Integer.parseInt(list.get(i).toString().split(" ")[0]);
+			int num = Integer.parseInt(list.get(i).toString().split(" ")[1]);
+			getFunc(func, num);
+		}
 	}
-	
-	public static PerformOpsFI isPrime(Integer num) {
-		return () -> {
-			if(num < 2) {
-				return false;
+	/**
+	 * 
+	 * @param func
+	 * @param num
+	 */
+	public static void getFunc(Integer func, Integer num) {
+		switch(func) {
+		case 1:
+			if(PerformOpsUtil.isOdd(num).check()) {
+				System.out.println("ODD");
 			}
 			else {
-				for(int i = 2; i < num; ++i) {
-					if(num % i <= 0) {
-						return false;
-					}
-				}
-				return true;
+				System.out.println("EVEN");
 			}
-		};
-	}
-	
-	public static PerformOpsFI isPalindrome(Integer num) {
-		return () -> {
-			StringBuilder temp = new StringBuilder();
-			temp.append(num.toString());
-			temp.reverse();
-			if(temp.toString().equals(num.toString())) {
-				return true;
+			break;
+		case 2:
+			if(PerformOpsUtil.isPrime(num).check()) {
+				System.out.println("PRIME");
 			}
-			return false;
-		};
+			else {
+				System.out.println("COMPOSITE");
+			}
+			break;
+		case 3:
+			if(PerformOpsUtil.isPalindrome(num).check()) {
+				System.out.println("PALINDROME");
+			}
+			else {
+				System.out.println("!PALINDROME");
+			}
+			break;
+		default:
+			break;
+		}
 	}
 }

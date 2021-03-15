@@ -3,10 +3,12 @@
  */
 package com.ss.wk1.d3.charcount;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -64,5 +66,24 @@ public class FileOperations {
 			list.add(dir.getPath());
 		}
 		return list;
+	}
+	/**
+	 * 
+	 * @param filePathName
+	 * @return
+	 * @throws Exception
+	 */
+	public static List<String> getFileContents(String filePathName) throws Exception {
+		List<String> tempListStr = new ArrayList<>();
+		try(FileInputStream fileIn = new FileInputStream(filePathName);
+				BufferedReader buffRead = new BufferedReader(new InputStreamReader(fileIn));){
+			String tempStr = buffRead.readLine();
+			while(tempStr != null) {
+				tempListStr.add(tempStr.toString());
+				tempStr = buffRead.readLine();
+			}
+		}
+		
+		return tempListStr;
 	}
 }

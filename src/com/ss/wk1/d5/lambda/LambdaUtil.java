@@ -15,6 +15,9 @@ public class LambdaUtil {
 	 * @return
 	 */
 	public static Integer sortEFirstUtil(String str) {
+		if(str==null) {
+			return 0;
+		}
 		if(str.charAt(0) == 'e') {
 			return -1;
 		}

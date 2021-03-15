@@ -9,6 +9,9 @@ package com.ss.wk1.project;
 
 @FunctionalInterface
 public interface PerformOpsFI {
-	
+	/**
+	 * 
+	 * @return
+	 */
 	public Boolean check();
 }
