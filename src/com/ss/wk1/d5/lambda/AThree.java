@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
  */
 public class AThree {
 	/**
-	 * 
+	 * Returns a string that starts with the letter 'a' AND length of three.
 	 * @param listStr
 	 * @return
 	 */

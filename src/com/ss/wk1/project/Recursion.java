@@ -8,11 +8,12 @@ import java.util.List;
 
 /**
  * @author Christian Angeles
- *
  */
 public class Recursion {
 	/**
-	 * 
+	 * Given an array of ints, is it possible to choose a group of some of the ints, such that the group sums to the given target, 
+	 * <p>with this additional constraint: if there are numbers in the array that are adjacent and the identical value, 
+	 * <p>they must either all be chosen, or none of them chosen. 
 	 * @param index
 	 * @param arr
 	 * @param target

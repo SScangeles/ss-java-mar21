@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
  */
 public class EvenOdd {
 	/**
-	 * 
+	 * Returns a string marking odd numbers with 'o' and even numbers with 'e'.
 	 * @param numList
 	 * @return
 	 */

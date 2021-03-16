@@ -37,7 +37,7 @@ public class PerformOps {
 		}
 	}
 	/**
-	 * 
+	 * Driver function for PerformOps.
 	 * @param func
 	 * @param num
 	 */

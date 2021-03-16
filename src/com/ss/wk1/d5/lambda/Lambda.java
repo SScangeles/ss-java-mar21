@@ -17,7 +17,7 @@ public class Lambda {
 		lambUtil = new LambdaUtil();
 	}
 	/**
-	 * 
+	 * Returns a sorted list from shortest to longest string length.
 	 * @return
 	 */
 	public List<String> sortLenShortLong(List<String> list) {
@@ -28,7 +28,7 @@ public class Lambda {
 		return strList;
 	}
 	/**
-	 * 
+	 * Returns a sorted list from longest to shortest string length.
 	 * @return
 	 */
 	public List<String> sortLenLongShort(List<String> list) {
@@ -39,7 +39,7 @@ public class Lambda {
 		return strList;
 	}
 	/**
-	 * 
+	 * Returns an alphabetically sorted list of strings.
 	 * @return
 	 */
 	public List<String> sortAlphabet(List<String> list) {
@@ -50,7 +50,7 @@ public class Lambda {
 		return strList;
 	}
 	/**
-	 * 
+	 * Returns a sorted list where strings starting an 'e' is first.
 	 * @return
 	 */
 	public List<String> sortEFirst(List<String> list) {
@@ -66,7 +66,7 @@ public class Lambda {
 		return strList;
 	}
 	/**
-	 * 
+	 * Returns a sorted list where strings starting an 'e' is first.
 	 * @return
 	 */
 	public List<String> sortEFirstUtil(List<String> list){

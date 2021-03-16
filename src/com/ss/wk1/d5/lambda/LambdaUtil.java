@@ -8,7 +8,7 @@ package com.ss.wk1.d5.lambda;
  */
 public class LambdaUtil {
 	/**
-	 * 
+	 * Returns a sorted list where strings starting an 'e' is first.
 	 * @param str
 	 * @return
 	 */

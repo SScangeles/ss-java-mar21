@@ -13,7 +13,7 @@ import java.util.stream.Collectors;
  */
 public class Functionals {
 	/**
-	 * 
+	 * Returns the right most digit of a list.
 	 * @param listPosNum
 	 * @return
 	 */
@@ -23,7 +23,7 @@ public class Functionals {
 		return listPosNum.stream().map((num) -> num % 10).collect(Collectors.toList());
 	}
 	/**
-	 * 
+	 * Returns a doubled number list.
 	 * @param listNum
 	 * @return
 	 */
@@ -33,7 +33,7 @@ public class Functionals {
 		return listNum.stream().map((num) -> num * 2).collect(Collectors.toList());
 	}
 	/**
-	 * 
+	 * Returns a list of strings with letter 'x' removed.
 	 * @param listStr
 	 * @return
 	 */

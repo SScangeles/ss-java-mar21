@@ -9,7 +9,7 @@ package com.ss.wk1.project;
  */
 public class PerformOpsUtil {
 	/**
-	 * 
+	 * Returns a functional interface checking if a number is odd.
 	 * @param num
 	 * @return
 	 */
@@ -19,7 +19,7 @@ public class PerformOpsUtil {
 		};
 	}
 	/**
-	 * 
+	 * Returns a functional interface checking if a number is prime.
 	 * @param num
 	 * @return
 	 */
@@ -39,7 +39,7 @@ public class PerformOpsUtil {
 		};
 	}
 	/**
-	 * 
+	 * Returns a functional interface checking if a number is a palindrome.
 	 * @param num
 	 * @return
 	 */
